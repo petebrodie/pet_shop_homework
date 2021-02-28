@@ -16,10 +16,17 @@ def get_pets_sold(pets_sold):
 
 def increase_pets_sold(pets_sold, sold):
     pets_sold["admin"]["pets_sold"] += sold
+
+def get_stock_count(pet_shop):
+    return len(pet_shop["pets"])
+
+    
     
 
+    
 
-# def test_increase_pets_sold(self):
-#         increase_pets_sold(self.cc_pet_shop,2)
-#         sold = get_pets_sold(self.cc_pet_shop)
-#         self.assertEqual(2, sold)
+    # def test_stock_count(self):
+    #     count = get_stock_count(self.cc_pet_shop)
+    #     self.assertEqual(6, count)
+    
+
